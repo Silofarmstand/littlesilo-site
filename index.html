@@ -385,6 +385,14 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   function tryPlay(){ if(!setSrc() && !a.getAttribute('src')){ a.src='jingle.mp3'; srcReady=true; } var p=a.play(); if(p&&p.catch) p.catch(function(){}); }
   // Try to start right away. Most browsers block sound until the visitor taps or clicks,
   // so we also start it on their first tap, click or key press anywhere on the page.
+  tryPlay();
+  // The floating Pause button stays on screen the whole time, so visitors can always stop the sound.
+  function firstTouch(e){
+    ['pointerdown','touchstart'].forEach(function(t){ document.removeEventListener(t,firstTouch,true); });
+    if(stoppedByVisitor||b.contains(e.target)||(bp&&bp.contains(e.target))||a.contains(e.target)||e.target===a) return;
+    if(a.paused&&!played) tryPlay();
+  }
+  ['pointerdown','touchstart'].forEach(function(t){ document.addEventListener(t,firstTouch,true); });
   b.addEventListener('click',function(){ if(a.paused){ stoppedByVisitor=false; if(a.ended) a.currentTime=0; tryPlay(); } else { stoppedByVisitor=true; a.pause(); } });
   if(bp) bp.addEventListener('click',function(){ b.click(); });
   sync();
