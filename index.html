@@ -103,6 +103,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
 .jingle .lyrics p.repeat{font-family:"DM Sans",system-ui,sans-serif;font-size:1rem;font-style:italic;color:var(--muted)}
 .jingle .eyebrow{margin:0 0 .35rem;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3B6B47}
 .signpic{margin:1.6rem 0 0}.signpic img{width:100%;border-radius:12px;display:block}.signpic figcaption{margin-top:.5rem;font-size:.95rem;color:var(--muted)}
+.order .deadline{margin:0;padding:.9rem 1rem;border-radius:10px;background:color-mix(in srgb,var(--wheat) 28%,var(--paper));border-left:5px solid var(--wheat);color:var(--ink)}
 </style>
 </head>
 <body>
@@ -162,6 +163,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   <section id="preorder">
     <h2>Pre-order for pickup</h2>
     <div class="order">
+      <p class="deadline"><strong>Pre-orders need to be in by Tuesday at the latest for pickup on Friday or Saturday.</strong> Need it sooner? Text us at <a href="sms:+12085205810">208-520-5810</a> and we'll see what we can do.</p>
       <p class="note">Need help ordering? Call or text <a href="tel:+12085205810">208-520-5810</a> and we will gladly help.</p>
       <p class="note">Choose what you like and send it to us by text using the button below. We'll reply to confirm, and <strong><em>a payment link will be sent to you upon order receipt.</em></strong></p>
       <div><label for="oname">Your name</label><input id="oname" type="text" autocomplete="name"></div>
@@ -277,7 +279,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   // Add "cookie" as a third value for cookies: 5 or more cookies (any mix) drop to COOKIE_DEAL each.
   var TAX_RATE = 0.08;
   var COOKIE_DEAL = 3.75, COOKIE_DEAL_QTY = 5;
-  var ITEMS = [["Regular sourdough loaf",12],["Jalapeño cheddar sourdough loaf",15],["Rosemary roasted garlic sourdough loaf",15],["Honey oat sourdough loaf",15],["Fresh-milled organic bread (special order, by Tue/Wed)",10],["White loaf (made with sourdough starter)",8],["Sourdough Thanksgiving loaf (starts first weekend of November)",15],["Mini-Sourdough flight (4 mini loaves)",20],["Sourdough bagels, 6-pack (Sat & Sun pickup)",12],["Lemon blueberry focaccia (special order, by Tue/Wed)",12],["Apple fritter focaccia (special order, by Tue/Wed)",12],["October cookie: Pumpkin Puffs, 4-pack",6],["Sourdough brown butter chocolate chip cookie",4,"cookie"],["Sourdough oatmeal cream pie",4,"cookie"],["Brown butter bourbon pecan chocolate chip cookie",4,"cookie"],["Biscoff cookie",4,"cookie"],["Peanut butter cream pie cookie",4,"cookie"],["Stuffed S'mores cookie (new!)",4],["Sourdough white chocolate macadamia nut cookie (new!)",4],["Sourdough monster cookie: chocolate chips, Oreos, M&Ms (through October)",4],["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)",6],["Banana pudding cookie (pre-order only)",4],["Sourdough cinnamon rolls, 2-pack",8],["Farm fresh eggs, dozen (when available)",5]];
+  var ITEMS = [["Regular sourdough loaf",12],["Jalapeño cheddar sourdough loaf",15],["Rosemary roasted garlic sourdough loaf",15],["Honey oat sourdough loaf",15],["Fresh-milled organic bread (special order, by Tuesday)",10],["White loaf (made with sourdough starter)",8],["Sourdough Thanksgiving loaf (starts first weekend of November)",15],["Mini-Sourdough flight (4 mini loaves)",20],["Sourdough bagels, 6-pack (Sat & Sun pickup)",12],["Lemon blueberry focaccia (special order, by Tuesday)",12],["Apple fritter focaccia (special order, by Tuesday)",12],["October cookie: Pumpkin Puffs, 4-pack",6],["Sourdough brown butter chocolate chip cookie",4,"cookie"],["Sourdough oatmeal cream pie",4,"cookie"],["Brown butter bourbon pecan chocolate chip cookie",4,"cookie"],["Biscoff cookie",4,"cookie"],["Peanut butter cream pie cookie",4,"cookie"],["Stuffed S'mores cookie (new!)",4],["Sourdough white chocolate macadamia nut cookie (new!)",4],["Sourdough monster cookie: chocolate chips, Oreos, M&Ms (through October)",4],["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)",6],["Banana pudding cookie (pre-order only)",4],["Sourdough cinnamon rolls, 2-pack",8],["Farm fresh eggs, dozen (when available)",5]];
   var SECTIONS = {"0": "Bread", "8": "Bagels", "9": "Focaccia (special order)", "11": "Cookies & sweets", "23": "Farm eggs"};
 
   var qty = ITEMS.map(function(){return 0;});
