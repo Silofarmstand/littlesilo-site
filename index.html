@@ -173,9 +173,11 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <div><label for="onotes">Notes (what time you would like to pick up your order)</label><textarea id="onotes" rows="3"></textarea></div>
       <div><strong>Your order</strong><pre class="summary" id="osum"></pre></div>
       <div class="btns">
+        <a class="btn" id="oemail" href="#preorder" hidden>Email my order</a>
         <a class="btn" id="osend" href="#preorder">Send order by text</a>
         <button type="button" class="btn alt" id="ocopy">Copy my order</button>
       </div>
+      <p class="note" id="odesk" hidden style="margin:.6rem 0 0">On a computer? Click <strong>Email my order</strong> to send it to us by email. Texting usually only works from a phone. No email app on this computer? Click <strong>Copy my order</strong> and paste it into an email to <strong>darbysimpson1071@icloud.com</strong>.</p>
       <p style="margin:.6rem 0 0;color:var(--ink)"><strong><em>(A payment link will be sent to you upon order receipt.)</em></strong></p>
       <p class="note" style="margin:.4rem 0 0">If your messages app doesn't open, tap <strong>Copy my order</strong>, then paste it into a text to <strong>208-520-5810</strong>.</p>
       <p class="note" id="ostatus" aria-live="polite"></p>
@@ -325,10 +327,21 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
     if(notesEl.value.trim()) t+='\nNotes: '+notesEl.value.trim();
     return t;
   }
+  // Computers (especially Windows) can't send texts, so offer email there instead.
+  var ORDER_EMAIL='darbysimpson1071@icloud.com';
+  var emailBtn=document.getElementById('oemail');
+  var ua=navigator.userAgent||'';
+  var isPhone=/Android|iPhone|iPad|iPod|Mobile/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  if(!isPhone&&emailBtn){
+    emailBtn.hidden=false; document.getElementById('odesk').hidden=false;
+    send.className='btn alt';
+    emailBtn.addEventListener('click',function(e){ if(!ready()){ e.preventDefault(); return; } status.textContent='Opening your email. If nothing opens, click Copy my order and paste it into an email to '+ORDER_EMAIL+'.'; });
+  }
   function render(){
     var t=orderText();
     sum.textContent=t||'Nothing selected yet.';
     if(PHONE) send.href='sms:'+PHONE+'?&body='+encodeURIComponent(t);
+    if(emailBtn){ var nm=nameEl.value.trim(); emailBtn.href='mailto:'+ORDER_EMAIL+'?subject='+encodeURIComponent('Little Silo pre-order'+(nm?' - '+nm:''))+'&body='+encodeURIComponent(t); }
     status.textContent='';
   }
   function ready(){
