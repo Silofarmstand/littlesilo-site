@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="only light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>From the Silo · Little Silo Letter Club</title>
+<meta name="description" content="A handwritten letter from our little farm in Dahlonega, mailed to you each month with Finnley's collectible art card, a family recipe and a message from Sawyer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/*
+  ============================================================
+  THREE THINGS TO UPDATE
+  1. JOIN_LINK below: paste your beehiiv "upgrade" page link
+     (looks like https://YOURNAME.beehiiv.com/upgrade).
+  2. FREE_LINK below: your beehiiv free signup page
+     (looks like https://YOURNAME.beehiiv.com/subscribe).
+  3. SPOTS_CLAIMED below: how many founding members have joined.
+     Change the number now and then; the page does the rest.
+  (These live in the <script> at the bottom of this file.)
+  ============================================================
+*/
+:root{
+  --paper:#F6F7F2; --panel:#E9EDE3; --ink:#1E2C21; --muted:#54635A;
+  --forest:#24402D; --forest-ink:#F3EEDF; --cream:#F3EEDF; --kraft:#B98B5A;
+  --bloom:#B03A6F; --wheat:#D9A441; --line:#C9D1C3; color-scheme:only light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:1.05rem}
+h1,h2,h3{font-family:"Young Serif",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--bloom);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--ink);color:var(--paper);padding:.75rem 1.1rem;font-weight:700}.skip:focus{left:0}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.25rem}
+.top img{height:clamp(84px,14vw,120px);width:auto;display:block;mix-blend-mode:multiply}
+.top a.back{font-weight:700;text-decoration:none;border-bottom:2px solid var(--line)}
+.top a.back:hover{border-color:var(--bloom)}
+
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center;padding:2rem 0 3rem}
+.eyebrow{margin:0 0 .5rem;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3B6B47}
+.hero h1{font-size:clamp(2.8rem,9vw,5rem);letter-spacing:-.01em}
+.hero .lede{margin:1.1rem 0 0;color:var(--muted);font-size:1.15rem;max-width:44ch}
+.hero .sign{margin:.9rem 0 0;font-family:"Young Serif",Georgia,serif;font-size:1.15rem}
+
+/* the envelope illustration */
+.envelope{position:relative;aspect-ratio:7.25/5.25;background:var(--forest);border-radius:10px;box-shadow:0 18px 40px rgba(30,44,33,.25);overflow:hidden;max-width:440px;justify-self:center;width:100%}
+.envelope::before{content:"";position:absolute;inset:0 0 auto 0;height:62%;background:#1D3524;clip-path:polygon(0 0,100% 0,50% 100%)}
+.envelope .seal{position:absolute;left:50%;top:62%;transform:translate(-50%,-50%);width:23%;aspect-ratio:1;border-radius:50%;background:var(--kraft);display:grid;place-items:center;text-align:center;color:#3A2A18;font-family:"Young Serif",Georgia,serif;font-size:clamp(.6rem,1.8vw,.85rem);line-height:1.1;box-shadow:inset 0 0 0 3px rgba(58,42,24,.25)}
+.envelope .label{position:absolute;right:7%;bottom:9%;background:var(--cream);color:#1a1a1a;border-radius:4px;padding:.45rem .7rem;font-size:clamp(.55rem,1.7vw,.78rem);line-height:1.35;font-family:Georgia,serif}
+.envelope .stamp{position:absolute;right:6%;top:8%;width:12%;aspect-ratio:4/5;background:var(--cream);border:2px dashed #C9BFA4;border-radius:3px}
+
+section{padding:2.75rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:1.25rem}
+.intro{max-width:62ch;font-size:1.1rem}
+.intro p{margin:0 0 1rem}
+
+.inside{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.inside li{background:var(--panel);border-radius:14px;padding:1.25rem 1.3rem}
+.inside h3{font-size:1.25rem;margin-bottom:.35rem}
+.inside p{margin:0;color:var(--muted)}
+.inside .who{display:block;margin-bottom:.35rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3B6B47}
+
+/* join panel */
+.join{background:var(--forest);color:var(--forest-ink);border-radius:18px;padding:clamp(1.5rem,4vw,2.5rem)}
+.join .eyebrow{color:#C9DDBF}
+.join h2{color:var(--cream);margin-bottom:.6rem}
+.join p{margin:0 0 1rem;color:#DCE3D3;max-width:56ch}
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0 1.25rem}
+.tier{background:rgba(243,238,223,.07);border:1px solid rgba(243,238,223,.25);border-radius:14px;padding:1.25rem}
+.tier.feat{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.tier h3{font-size:1.3rem}
+.tier .price{font-family:"Young Serif",Georgia,serif;font-size:2.4rem;line-height:1;margin:.6rem 0 .2rem}
+.tier .price small{font-family:"DM Sans",system-ui,sans-serif;font-size:1rem}
+.tier p{margin:.4rem 0 0;color:inherit;opacity:.85;font-size:.98rem}
+.tier.feat p{color:var(--muted);opacity:1}
+.meter{margin:1rem 0 .4rem;height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.meter span{display:block;height:100%;background:var(--bloom);border-radius:999px;width:0}
+.spots{font-weight:700;font-size:.95rem;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
+.btn{display:inline-block;padding:.85rem 1.35rem;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:700;text-align:center}
+.btn:hover{background:var(--bloom);color:#fff}
+.join .btn.light{background:var(--cream);color:var(--ink)}
+.join .btn.light:hover{background:var(--bloom);color:#fff}
+.fine{font-size:.92rem;color:#C9D3C2;margin:1rem 0 0}
+
+.gift{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:2.25rem;align-items:center}
+.gift h2{margin-bottom:.7rem}
+.gift p{margin:0 0 1rem;max-width:58ch}
+.gift .note{color:var(--muted);font-size:.95rem;margin-top:1rem}
+.gift-steps{margin:0 0 .5rem;padding-left:1.3rem;display:grid;gap:.45rem}
+.gift-tag{position:relative;aspect-ratio:3/4;max-width:260px;width:100%;justify-self:center;background:var(--kraft);border-radius:14px 14px 14px 14px;clip-path:polygon(22% 0,78% 0,100% 14%,100% 100%,0 100%,0 14%);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.8rem;padding:2rem 1.2rem 1.2rem;color:#3A2A18;text-align:center;box-shadow:0 14px 30px rgba(58,42,24,.2)}
+.gift-tag::before{content:"";position:absolute;top:9%;left:50%;transform:translateX(-50%);width:16%;aspect-ratio:1;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 3px rgba(58,42,24,.25)}
+.gift-to{font-family:Georgia,serif;font-style:italic;font-size:1.05rem}
+.gift-from{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;color:var(--forest);border-top:1px solid rgba(58,42,24,.35);padding-top:.6rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;counter-reset:s}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--forest);color:var(--cream);font-family:"Young Serif",Georgia,serif;font-size:1.2rem;margin-bottom:.6rem}
+.steps h3{font-size:1.15rem;margin-bottom:.25rem}
+.steps p{margin:0;color:var(--muted)}
+
+.free{background:var(--panel);border-radius:14px;padding:1.5rem;display:grid;grid-template-columns:1fr auto;gap:1rem 2rem;align-items:center}
+.free h2{font-size:1.6rem;margin-bottom:.35rem}
+.free p{margin:0;color:var(--muted)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.alt:hover{background:var(--bloom);border-color:var(--bloom);color:#fff}
+
+.faq details{border-bottom:1px solid var(--line);padding:.9rem 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--muted)}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:.6rem 0 0;color:var(--muted);max-width:62ch}
+
+@media (max-width:900px){.tiers{grid-template-columns:1fr 1fr}.tiers .tier:last-child{grid-column:1/-1}}
+footer{padding:2rem 0 4rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+footer p{margin:.6rem 0 0}footer a{font-weight:700}
+
+@media (max-width:720px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding-top:1.25rem}
+  .tiers{grid-template-columns:1fr !important}
+  .steps{grid-template-columns:1fr}
+  .free{grid-template-columns:1fr}
+  .gift{grid-template-columns:1fr;gap:1.5rem}
+  .gift-tag{max-width:200px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="wrap">
+
+  <div class="top">
+    <a href="/"><img src="../logo.jpg" alt="Little Silo Flower Farm &amp; Farmstand, back to the home page"></a>
+    <a class="back" href="/">Farmstand &amp; pre-orders</a>
+  </div>
+
+  <main id="main" tabindex="-1">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">The Little Silo letter club</p>
+      <h1>From the Silo</h1>
+      <p class="lede">Real mail from our little farm in Dahlonega. Once a month, a handwritten letter arrives in your mailbox with a piece of our family tucked inside.</p>
+      <p class="sign">Dawn, Darby, Finnley &amp; Sawyer</p>
+      <div class="btns"><a class="btn js-join" href="#join">Become a founding member</a> <a class="btn alt" href="#gift">Give it as a gift</a></div>
+    </div>
+    <div class="envelope" role="img" aria-label="A dark forest-green envelope with a round kraft Little Silo seal and a cream address label">
+      <div class="stamp"></div>
+      <div class="seal">Little<br>Silo</div>
+      <div class="label">To a dear friend<br>Anywhere you call home</div>
+    </div>
+  </header>
+
+  <section id="story">
+    <h2>Why a letter?</h2>
+    <div class="intro">
+      <p>There's something about real mail that still feels special. Not a bill or another notification, just a little something in your mailbox from someone who was thinking about you.</p>
+      <p>Over the last year and a half, so many people have pulled into our driveway as strangers and left as friends. From the Silo is our way of sharing a little piece of the farm with you, wherever you live.</p>
+    </div>
+  </section>
+
+  <section id="inside">
+    <h2>What's inside each envelope</h2>
+    <ul class="inside">
+      <li><span class="who">From Dawn</span><h3>A handwritten letter</h3><p>Stories from the farm, the seasons, and what we're grateful for this month.</p></li>
+      <li><span class="who">From Finnley, age 7</span><h3>A numbered art card</h3><p>A collectible 4×6 card of Finnley's own artwork. The first is her pumpkin, Collection No. 001.</p></li>
+      <li><span class="who">From Darby</span><h3>A family recipe card</h3><p>Sometimes a longtime family favorite, sometimes one of Darby's recipes from our bakery.</p></li>
+      <li><span class="who">From Sawyer</span><h3>A scripture card &amp; video</h3><p>A verse chosen by Sawyer, with a code to scan for a video message from him, just for members.</p></li>
+      <li><span class="who">Every now and then</span><h3>A little surprise</h3><p>A small seasonal something, tucked in when we can't help ourselves.</p></li>
+    </ul>
+  </section>
+
+  <section id="join">
+    <div class="join">
+      <p class="eyebrow">First letter mails November 2026</p>
+      <h2>Join our founding 100</h2>
+      <p>Our first 100 members pay just $10 a month, and that price stays yours for as long as you're a member. After that, membership is $11 a month.</p>
+
+      <div class="tiers">
+        <div class="tier feat">
+          <h3>Founding Member</h3>
+          <p class="price">$10<small> / month</small></p>
+          <p>Limited to the first 100 members. Price locked in.</p>
+          <div class="meter" aria-hidden="true"><span id="meterBar"></span></div>
+          <p class="spots" id="spotsText">Founding spots are open</p>
+        </div>
+        <div class="tier">
+          <h3>Letter Club Member</h3>
+          <p class="price">$11<small> / month</small></p>
+          <p>Opens once the founding spots are filled. Same letter, same love.</p>
+        </div>
+        <div class="tier">
+          <h3>Faraway Friend</h3>
+          <p class="price">$15<small> / month</small></p>
+          <p>For friends outside the U.S. Includes international postage, mailed anywhere you call home.</p>
+          <div class="btns"><a class="btn light js-join" href="#join">Become a Faraway Friend</a></div>
+        </div>
+      </div>
+
+      <div class="btns"><a class="btn light js-join" href="#join">Become a founding member</a></div>
+      <p class="fine">Secure checkout by card, Apple Pay or Google Pay. Cancel anytime. You'll enter your mailing address right after you join.</p>
+    </div>
+  </section>
+
+  <section id="gift">
+    <div class="gift">
+      <div class="gift-tag" aria-hidden="true">
+        <span class="gift-to">To: someone you love</span>
+        <span class="gift-from">From the Silo</span>
+      </div>
+      <div>
+        <p class="eyebrow">Give the gift of real mail</p>
+        <h2>Send a membership as a gift</h2>
+        <p>Know someone who would love a letter from the farm? A grandmother, a far-away friend, someone who's been to the Silo and still talks about it? Give them a little something to look forward to in their mailbox every month.</p>
+        <ol class="gift-steps">
+          <li>Tap <strong>Give a gift</strong> and choose <strong>Gift</strong> at checkout.</li>
+          <li>Enter their name and email address, and pay for the gift up front.</li>
+          <li>They'll get an email from us saying a gift is waiting. When they accept, they add their mailing address and their letters begin.</li>
+        </ol>
+        <div class="btns"><a class="btn js-gift" href="#gift">Give a gift</a></div>
+        <p class="note">Want it to be a surprise? Call or text <a href="tel:+12085205810">208-520-5810</a> with their mailing address and we'll make sure the first letter finds them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><h3>Join</h3><p>Tap the button and enter your email.</p></li>
+      <li><h3>Pay securely</h3><p>Choose your membership and check out. You're billed once a month.</p></li>
+      <li><h3>Tell us where to mail it</h3><p>Add your mailing address, then watch your mailbox each month.</p></li>
+    </ol>
+  </section>
+
+  <section id="free">
+    <div class="free">
+      <div>
+        <h2>Just want farm news?</h2>
+        <p>Our free email updates tell you what's at the stand each week, new bakes and seasonal flowers. No mailbox, no charge.</p>
+      </div>
+      <a class="btn alt js-free" href="#free">Get free email updates</a>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Questions</h2>
+    <details><summary>When will my first letter arrive?</summary><p>Our very first letter, Collection No. 001, mails in November 2026. After that, letters go out once a month.</p></details>
+    <details><summary>Can I cancel?</summary><p>Yes, anytime. You can manage your membership from the link in any email from us, or call or text <a href="tel:+12085205810">208-520-5810</a> and we'll take care of it.</p></details>
+    <details><summary>Will I keep the $10 founding price?</summary><p>Yes. As long as you stay a member, your founding price stays $10 a month.</p></details>
+    <details><summary>How do I watch Sawyer's video?</summary><p>Scan the code on Sawyer's card with your phone's camera. Sign in with the email you joined with, and the video will play. It's just for members.</p></details>
+    <details><summary>Do you mail outside the U.S.?</summary><p>Yes! We'd love to reach friends far from Georgia. Choose the Faraway Friend membership, $15 a month with international postage included, and we'll mail your letter wherever you call home.</p></details>
+    <details><summary>Can I give it as a gift?</summary><p>Yes! Tap <a href="#gift">Give a gift</a> and choose Gift at checkout. You pay up front, and they get an email inviting them to accept and add their mailing address. Before the gift runs out, we'll ask whether they'd like to keep their letters coming.</p></details>
+  </section>
+  </main>
+
+  <footer>
+    Little Silo Flower Farm &amp; Farmstand · 3169 Auraria Rd, Dahlonega, GA 30533
+    <p>Questions? Call or text <a href="tel:+12085205810">208-520-5810</a>. <a href="/">Back to the farmstand</a></p>
+  </footer>
+</div>
+
+<script>
+/* ---------- EDIT THESE ---------- */
+var JOIN_LINK = "https://fromthesilo.beehiiv.com/upgrade";
+var FREE_LINK = "https://fromthesilo.beehiiv.com/subscribe";
+var SPOTS_CLAIMED = 0;     // founding members so far (out of 100)
+/* -------------------------------- */
+
+(function(){
+  var TOTAL = 100;
+  var left = Math.max(0, TOTAL - SPOTS_CLAIMED);
+  var bar = document.getElementById('meterBar');
+  var txt = document.getElementById('spotsText');
+  if (bar) bar.style.width = Math.min(100, SPOTS_CLAIMED) + '%';
+  if (txt) {
+    if (SPOTS_CLAIMED <= 0) txt.textContent = 'All 100 founding spots are open';
+    else if (left > 0) txt.textContent = left + ' of 100 founding spots left';
+    else txt.textContent = 'Founding spots are full. Thank you!';
+  }
+  function wire(sel, link){
+    var els = document.querySelectorAll(sel);
+    for (var i = 0; i < els.length; i++) {
+      if (link) { els[i].href = link; }
+    }
+  }
+  wire('.js-join', JOIN_LINK);
+  wire('.js-free', FREE_LINK);
+  wire('.js-gift', JOIN_LINK);   // gifts use the same beehiiv upgrade page (choose "Gift")
+})();
+</script>
+</body>
+</html>
