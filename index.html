@@ -137,7 +137,8 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
     </div>
   </section>
 
-  <section id="featured">
+  <!-- On the shelf: Mini-Sourdough Flight feature. Remove "hidden" to bring it back. -->
+  <section id="featured" hidden>
     <div class="feature">
       <img src="flight.jpg" alt="A kraft box of four mini sourdough loaves with a Little Silo label reading Mini-Sourdough Flight: jalapeño cheddar, original, rosemary garlic, and honey oat" loading="lazy">
       <div>
@@ -157,7 +158,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <ul>
         <li class="grp"><h3>Bread</h3><div class="opts"><ul class="opts"><li><span>Regular sourdough loaf</span><em>$12</em></li><li><span>Jalapeño cheddar sourdough loaf</span><em>$15</em></li><li><span>Classic white loaf, made with sourdough starter</span><em>$8</em></li><li><span>Sourdough bread soup bowls, 2-pack</span><em>$10</em></li></ul></div></li>
         <li class="grp"><h3>Bagels</h3><div class="opts"><ul class="opts"><li><span>Sourdough bagels, 6-pack</span><em>$12</em></li></ul><p class="onote">Usually Saturdays and Sundays.</p></div></li>
-        <li class="grp"><h3>Cookies &amp; sweets</h3><div class="opts"><ul class="opts"><li><span>Pumpkin Puffs, 4-pack (October cookie of the month)</span><em>$6</em></li><li><span>Sourdough chocolate chip</span><em>$4</em></li><li><span>Sourdough oatmeal cream pie</span><em>$4</em></li><li><span>Triple peanut butter (new!)</span><em>$4</em></li><li><span>Biscoff</span><em>$4</em></li><li><span>Sourdough monster cookie (chocolate chips, Oreos, M&amp;M's), through October</span><em>$4</em></li><li><span>Sourdough cinnamon rolls, 2-pack</span><em>$8</em></li><li><span>Pumpkin coffee cake (new!)</span><em></em></li></ul><p class="onote">Regular cookies are $4 each, or $3.75 each when you get 5 or more. Specialty cookies are not included in that price.</p></div></li>
+        <li class="grp"><h3>Cookies &amp; sweets</h3><div class="opts"><ul class="opts"><li><span>Pumpkin Puffs, 4-pack (October cookie of the month)</span><em>$6</em></li><li><span>Sourdough brown butter chocolate chip</span><em>$4</em></li><li><span>Sourdough oatmeal cream pie</span><em>$4</em></li><li><span>Triple peanut butter (new!)</span><em>$4</em></li><li><span>Biscoff</span><em>$4</em></li><li><span>Sourdough monster cookie (chocolate chips, Oreos, M&amp;M's), through October</span><em>$4</em></li><li><span>Sourdough cinnamon rolls, 2-pack</span><em>$8</em></li><li><span>Pumpkin coffee cake (new!)</span><em></em></li></ul><p class="onote">Regular cookies are $4 each, or $3.75 each when you get 5 or more. Specialty cookies are not included in that price.</p></div></li>
       </ul>
     </div>
   </section>
@@ -277,7 +278,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   // Add "cookie" as a third value for cookies: 5 or more cookies (any mix) drop to COOKIE_DEAL each.
   var TAX_RATE = 0.08;
   var COOKIE_DEAL = 3.75, COOKIE_DEAL_QTY = 5;
-  var ITEMS = [["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Classic white loaf (made with sourdough starter)", 8], ["Sourdough bread soup bowls, 2-pack", 10], ["Sourdough bagels, 6-pack (Sat & Sun pickup)", 12], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Sourdough chocolate chip cookie", 4, "cookie"], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms (through October)", 4], ["Sourdough cinnamon rolls, 2-pack", 8], ["Pumpkin coffee cake (new!)", null]];
+  var ITEMS = [["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Classic white loaf (made with sourdough starter)", 8], ["Sourdough bread soup bowls, 2-pack", 10], ["Sourdough bagels, 6-pack (Sat & Sun pickup)", 12], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Sourdough brown butter chocolate chip cookie", 4, "cookie"], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms (through October)", 4], ["Sourdough cinnamon rolls, 2-pack", 8], ["Pumpkin coffee cake (new!)", null]];
   // ON THE SHELF (not shown on the site right now). To bring one back, move it into ITEMS above.
   var SHELF = [["Rosemary roasted garlic sourdough loaf", 15], ["Mini-Sourdough flight (4 mini loaves)", 20], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Honey oat sourdough loaf", 15], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Sourdough Thanksgiving loaf (starts first weekend of November)", 15], ["Sourdough dinner rolls, 1 dozen (new!)", 12], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Peanut butter cream pie cookie", 4, "cookie"], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6]];
   var SECTIONS = {"0": "Bread", "4": "Bagels", "5": "Cookies & sweets"};
