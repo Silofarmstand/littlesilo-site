@@ -72,7 +72,7 @@ h2{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:1.25rem}
 .join .eyebrow{color:#C9DDBF}
 .join h2{color:var(--cream);margin-bottom:.6rem}
 .join p{margin:0 0 1rem;color:#DCE3D3;max-width:56ch}
-.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0 1.25rem}
+.tiers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0 1.25rem}
 .tier{background:rgba(243,238,223,.07);border:1px solid rgba(243,238,223,.25);border-radius:14px;padding:1.25rem}
 .tier.feat{background:var(--cream);color:var(--ink);border-color:var(--cream)}
 .tier h3{font-size:1.3rem}
@@ -118,7 +118,6 @@ h2{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:1.25rem}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin:.6rem 0 0;color:var(--muted);max-width:62ch}
 
-@media (max-width:900px){.tiers{grid-template-columns:1fr 1fr}.tiers .tier:last-child{grid-column:1/-1}}
 footer{padding:2rem 0 4rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
 footer p{margin:.6rem 0 0}footer a{font-weight:700}
 
@@ -177,7 +176,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
     <div class="join">
       <p class="eyebrow">First letter mails November 2026</p>
       <h2>Join our founding 100</h2>
-      <p>Our first 100 members pay just $10 a month, and that price stays yours for as long as you're a member. After that, membership is $11 a month.</p>
+      <p>Our first 100 members pay just $10 a month, and that price stays yours for as long as you're a member.</p>
 
       <div class="tiers">
         <div class="tier feat">
@@ -186,11 +185,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
           <p>Limited to the first 100 members. Price locked in.</p>
           <div class="meter" aria-hidden="true"><span id="meterBar"></span></div>
           <p class="spots" id="spotsText">Founding spots are open</p>
-        </div>
-        <div class="tier">
-          <h3>Letter Club Member</h3>
-          <p class="price">$11<small> / month</small></p>
-          <p>Opens once the founding spots are filled. Same letter, same love.</p>
+          <div class="btns"><a class="btn js-join" href="#join">Become a founding member</a></div>
         </div>
         <div class="tier">
           <h3>Faraway Friend</h3>
@@ -200,7 +195,6 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
         </div>
       </div>
 
-      <div class="btns"><a class="btn light js-join" href="#join">Become a founding member</a></div>
       <p class="fine">Secure checkout by card, Apple Pay or Google Pay. Cancel anytime. You'll enter your mailing address right after you join.</p>
     </div>
   </section>
