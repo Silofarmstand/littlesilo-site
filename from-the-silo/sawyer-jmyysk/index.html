@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="only light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin">
+<title>A message from Sawyer · From the Silo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/*
+  ============================================================
+  MEMBERS-ONLY PAGE for the QR code on Sawyer's card.
+  It is not linked from anywhere on the site and search engines
+  are told to skip it. Please don't add a link to it.
+
+  TO ADD SAWYER'S VIDEO: paste its YouTube or Vimeo link into
+  VIDEO_LINK in the <script> at the bottom of this file.
+  (Upload to YouTube as "Unlisted" so it stays off search.)
+  ============================================================
+*/
+:root{
+  --paper:#F6F7F2; --panel:#E9EDE3; --ink:#1E2C21; --muted:#54635A;
+  --forest:#1B3324; --cream:#F3EEDF; --kraft:#B98B5A;
+  --bloom:#B03A6F; --line:#C9D1C3; color-scheme:only light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:1.05rem}
+h1,h2,h3{font-family:"Young Serif",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--bloom);outline-offset:3px}
+.wrap{max-width:820px;margin:0 auto;padding:0 1.25rem}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.25rem}
+.top img{height:clamp(72px,12vw,104px);width:auto;display:block;mix-blend-mode:multiply}
+.top a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--line)}
+
+.hello{text-align:center;padding:2rem 0 1.5rem}
+.eyebrow{margin:0 0 .6rem;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3B6B47}
+.hello h1{font-size:clamp(2.5rem,8vw,4.2rem);letter-spacing:-.01em}
+.hello p.lede{margin:1rem auto 0;max-width:40ch;color:var(--muted);font-size:1.15rem}
+
+/* Sawyer's video */
+.video{margin:.5rem auto 2.25rem;max-width:760px}
+.video.tall{max-width:380px}
+.frame{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--forest);box-shadow:0 18px 40px rgba(30,44,33,.22)}
+.video.tall .frame{aspect-ratio:9/16}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.soon{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.5rem;text-align:center;color:var(--cream)}
+.soon .seal{width:4.5rem;aspect-ratio:1;border-radius:50%;background:var(--kraft);display:grid;place-items:center;color:#3A2A18;font-family:"Young Serif",Georgia,serif;font-size:.8rem;line-height:1.1;box-shadow:inset 0 0 0 3px rgba(58,42,24,.25)}
+.soon h2{font-size:clamp(1.4rem,4.5vw,2rem);color:var(--cream)}
+.soon p{margin:0;max-width:36ch;color:#DCE3D3}
+
+.letter{background:#FFFDF7;border:1px solid var(--line);border-radius:14px;padding:clamp(1.4rem,5vw,2.4rem);margin:0 0 2.5rem;box-shadow:0 6px 18px rgba(30,44,33,.06)}
+.letter p{margin:0 0 1rem;font-size:1.1rem;max-width:60ch}
+.letter .sig{font-family:"Young Serif",Georgia,serif;font-size:1.25rem;margin:1.4rem 0 0}
+
+footer{padding:2rem 0 4rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+footer p{margin:.5rem 0 0}footer a{font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <a href="/" aria-label="Little Silo Flower Farm & Farmstand home page" style="border:0"><img src="../../logo.jpg" alt="Little Silo Flower Farm &amp; Farmstand"></a>
+    <a href="/">Farmstand &amp; pre-orders</a>
+  </div>
+
+  <main>
+  <header class="hello">
+    <p class="eyebrow">Just for From the Silo members</p>
+    <h1>A message from Sawyer</h1>
+    <p class="lede">You found the code on Sawyer's card! This little corner of our website is only for the families who get our letters.</p>
+  </header>
+
+  <section class="video" id="video" aria-label="Sawyer's video message">
+    <div class="frame" id="frame">
+      <div class="soon" id="soon">
+        <span class="seal">From<br>the Silo</span>
+        <h2>Sawyer's video is on its way</h2>
+        <p>He's getting ready to film it now. Check back soon, and keep his card handy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="letter" aria-label="A note from the Little Silo family">
+    <p>Thank you for being part of From the Silo. Every letter we mail is our way of sharing a little piece of the farm, our family and our faith with you, and this video is Sawyer's way of saying hello in person.</p>
+    <p>Hold on to his card. Every time a new letter arrives, scan the code on that month's card for a new message from him.</p>
+    <p class="sig">With love,<br>Sawyer &amp; the Little Silo Family</p>
+  </section>
+  </main>
+
+  <footer>
+    Little Silo Flower Farm &amp; Farmstand · 3169 Auraria Rd, Dahlonega, GA 30533
+    <p>Questions about your membership? Call or text <a href="tel:+12085205810">208-520-5810</a>.</p>
+    <p><a href="/">Visit the farmstand</a></p>
+  </footer>
+</div>
+
+<script>
+/* ---------- EDIT THESE ---------- */
+var VIDEO_LINK = "";        // paste Sawyer's YouTube or Vimeo link between the quotes
+var VIDEO_IS_TALL = false;  // change to true if he was filmed with the phone held upright
+/* -------------------------------- */
+
+(function(){
+  var link = (VIDEO_LINK || "").trim();
+  if (!link) return;
+  var src = "", m;
+  if ((m = link.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/))([\w-]{11})/))) {
+    src = "https://www.youtube-nocookie.com/embed/" + m[1] + "?rel=0&modestbranding=1&playsinline=1";
+    if (/\/shorts\//.test(link)) VIDEO_IS_TALL = true;
+  } else if ((m = link.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/([0-9a-f]+))?/))) {
+    var h = m[2] || ((link.match(/[?&]h=([0-9a-f]+)/) || [])[1]);
+    src = "https://player.vimeo.com/video/" + m[1] + "?dnt=1" + (h ? "&h=" + h : "");
+  }
+  if (!src) return;
+  var f = document.createElement("iframe");
+  f.src = src;
+  f.title = "A video message from Sawyer";
+  f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+  f.allowFullscreen = true;
+  var frame = document.getElementById("frame");
+  frame.innerHTML = "";
+  frame.appendChild(f);
+  if (VIDEO_IS_TALL) document.getElementById("video").className = "video tall";
+})();
+</script>
+</body>
+</html>
