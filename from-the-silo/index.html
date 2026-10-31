@@ -48,6 +48,11 @@ a{color:inherit}
 .hero .lede{margin:1.1rem 0 0;color:var(--muted);font-size:1.15rem;max-width:44ch}
 .hero .sign{margin:.9rem 0 0;font-family:"Young Serif",Georgia,serif;font-size:1.15rem}
 
+.hero-vid{margin:0;justify-self:center;width:100%;max-width:340px}
+.hero-vid video{width:100%;height:auto;aspect-ratio:9/16;display:block;border-radius:14px;background:#1B3324;box-shadow:0 18px 40px rgba(30,44,33,.22)}
+.hero-vid figcaption{margin-top:.6rem;font-size:.92rem;color:var(--muted);text-align:center}
+.story-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center}
+@media (max-width:720px){.story-grid{grid-template-columns:1fr}}
 .hero-env{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 18px 40px rgba(30,44,33,.22)}
 /* the envelope illustration */
 .envelope{position:relative;aspect-ratio:7.25/5.25;background:var(--forest);border-radius:10px;box-shadow:0 18px 40px rgba(30,44,33,.25);overflow:hidden;max-width:440px;justify-self:center;width:100%}
@@ -149,15 +154,24 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <p class="sign">Dawn, Darby, Finnley &amp; Sawyer</p>
       <div class="btns"><a class="btn js-join" href="#join">Become a founding member</a> <a class="btn alt" href="#gift">Give it as a gift</a></div>
     </div>
-    <img class="hero-env" src="envelopes.jpg" width="1350" height="900" alt="Two forest-green From the Silo envelopes on a wooden table, one with a cream address label and a return label showing the silo porch, the other sealed with the round kraft Little Silo Flower Farm seal">
+    <figure class="hero-vid">
+      <video controls playsinline preload="metadata" poster="sawyer-intro-poster.jpg" width="540" height="960">
+        <source src="sawyer-intro.mp4" type="video/mp4">
+        Your browser can't play this video.
+      </video>
+      <figcaption>Sawyer and Finnley introduce From the Silo. Tap to play with sound.</figcaption>
+    </figure>
 
   </header>
 
   <section id="story">
     <h2>Why a letter?</h2>
+    <div class="story-grid">
     <div class="intro">
       <p>There's something about real mail that still feels special. Not a bill or another notification, just a little something in your mailbox from someone who was thinking about you.</p>
       <p>Over the last year and a half, so many people have pulled into our driveway as strangers and left as friends. From the Silo is our way of sharing a little piece of the farm with you, wherever you live.</p>
+    </div>
+    <img class="hero-env" src="envelopes.jpg" width="1350" height="900" loading="lazy" alt="Two forest-green From the Silo envelopes on a wooden table, one with a cream address label and a return label showing the silo porch, the other sealed with the round kraft Little Silo Flower Farm seal">
     </div>
   </section>
 
