@@ -142,7 +142,8 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   </section>
 
   <section id="november-special">
-    <div class="feature solo">
+    <div class="feature">
+      <img src="thanksgiving.jpg" alt="A golden, crusty Sourdough Thanksgiving loaf flecked with herbs, on a wooden board" loading="lazy">
       <div>
         <h2>November Special: Sourdough Thanksgiving Loaf</h2>
         <p>Our sourdough baked with all the Thanksgiving flavors. It tastes just like stuffing! Available all through November.</p>
@@ -225,6 +226,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <figure><img src="dahlia.jpg" alt="A coral-red dahlia in full bloom in the garden" loading="lazy"><figcaption>Dahlias from our garden</figcaption></figure>
       <figure><img src="honey.jpg" alt="Jars of Nezland Farms honey tied with twine and a honeycomb charm" loading="lazy"><figcaption>Nezland Farms honey, available inside the Silo</figcaption></figure>
       <figure><img src="bagels.jpg" alt="A stack of golden sourdough bagels on a wooden board" loading="lazy"><figcaption>Sourdough bagels, 6 for $12, usually Saturdays and Sundays</figcaption></figure>
+    <figure><img src="thanksgiving.jpg" alt="A golden, crusty Sourdough Thanksgiving loaf flecked with herbs, on a wooden board" loading="lazy"><figcaption>November special: Sourdough Thanksgiving loaf. Tastes just like stuffing! $15</figcaption></figure>
     <figure><img src="dinnerrolls.jpg" alt="A dozen golden sourdough dinner rolls in a bag with a Little Silo Flower Farm label" loading="lazy"><figcaption>Sourdough dinner rolls, amazingly soft! $12 a dozen, pre-order through November</figcaption></figure>
     <figure><img src="honeyoat.jpg" alt="Honey oat sourdough loaf topped with rolled oats, cut open to show the crumb" loading="lazy"><figcaption>Honey oat sourdough</figcaption></figure>
     <figure><img src="breadbowls.jpg" alt="Four crusty scored sourdough bread bowls on a wooden board" loading="lazy"><figcaption>Sourdough bread soup bowls, 2 for $10, by special order</figcaption></figure>
@@ -306,7 +308,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   if(!PHONE){ send.hidden=true; document.getElementById('ophone').hidden=false; }
 
   function money(n){ return '$'+(Math.round(n*100)/100).toFixed(n%1?2:0); }
-  var THUMB_BY_NAME = {"Sourdough brown butter white":null,"November special":null,"Fresh-milled":"milled.jpg","Honey oat":"honeyoat.jpg","White loaf":"whiteloaf.jpg","Jalapeño":"jalapeno.jpg","Sourdough bagels":"bagels.jpg","Regular sourdough":"regular-cut.jpg","Rosemary":"loaves3.jpg","Mini-Sourdough":"flight.jpg","October cookie":"pumpkin-new.jpg","Biscoff":"biscoff.jpg","Sourdough cinnamon":"cinnamonrolls.jpg","Banana pudding":"bananapudding.jpg","Sourdough brown":"chocchip.jpg","Farm fresh":"eggs.jpg","Sourdough oatmeal":"oatmealpie.jpg","Peanut butter":"pbcreampie.jpg","Brown butter bourbon":"pecan.jpg","Sourdough monster":"monster.jpg","Hello Fall":"cookiecake.jpg","Stuffed S'mores":"smores.jpg","Sourdough dinner":"dinnerrolls.jpg","Sourdough bread bowls":"breadbowls.jpg","Sourdough white":"macadamia.jpg","Classic white":"whiteloaf.jpg","Sourdough bread soup":"breadbowls.jpg","Sourdough chocolate chip":"chocchip.jpg"};
+  var THUMB_BY_NAME = {"Sourdough brown butter white":null,"November special":"thanksgiving.jpg","Fresh-milled":"milled.jpg","Honey oat":"honeyoat.jpg","White loaf":"whiteloaf.jpg","Jalapeño":"jalapeno.jpg","Sourdough bagels":"bagels.jpg","Regular sourdough":"regular-cut.jpg","Rosemary":"loaves3.jpg","Mini-Sourdough":"flight.jpg","October cookie":"pumpkin-new.jpg","Biscoff":"biscoff.jpg","Sourdough cinnamon":"cinnamonrolls.jpg","Banana pudding":"bananapudding.jpg","Sourdough brown":"chocchip.jpg","Farm fresh":"eggs.jpg","Sourdough oatmeal":"oatmealpie.jpg","Peanut butter":"pbcreampie.jpg","Brown butter bourbon":"pecan.jpg","Sourdough monster":"monster.jpg","Hello Fall":"cookiecake.jpg","Stuffed S'mores":"smores.jpg","Sourdough dinner":"dinnerrolls.jpg","Sourdough bread bowls":"breadbowls.jpg","Sourdough white":"macadamia.jpg","Classic white":"whiteloaf.jpg","Sourdough bread soup":"breadbowls.jpg","Sourdough chocolate chip":"chocchip.jpg"};
   var THUMBS = ITEMS.map(function(it){ for(var k in THUMB_BY_NAME){ if(it[0].indexOf(k)===0) return THUMB_BY_NAME[k]; } return null; });
   ITEMS.forEach(function(it,i){
     if(SECTIONS[i]){ var sh=document.createElement('li'); sh.className='sec'; var h3=document.createElement('h3'); h3.textContent=SECTIONS[i]; sh.appendChild(h3); list.appendChild(sh); }
