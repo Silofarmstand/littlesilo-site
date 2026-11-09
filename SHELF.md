@@ -1,6 +1,6 @@
 # On the shelf
 
-Items not on the order menu right now (last updated Oct 27, 2026).
+Items not on the order menu right now (updated Nov 9, 2026) (last updated Oct 27, 2026).
 They are saved in index.html in the `SHELF` list. To bring one back, move it into `ITEMS` (and the At the Silo this week list).
 
 | Item | Price | Photo |
@@ -31,3 +31,21 @@ Gallery photos taken down (photo files are still in the folder):
 - <figure><img src="smores.jpg" alt="Stuffed s'mores cookies topped with toasted marshmallow and a Hershey's chocolate square, one wrapped with a Little Silo Sweets label" loading="lazy"><figcaption>New! Stuffed S'mores cookies</figcaption></figure>
 - <figure><img src="biscoff.jpg" alt="Biscoff cookies with white drizzle and cookie crumbs on a cooling rack" loading="lazy"><figcaption>Biscoff cookies</figcaption></figure>
 - <figure><img src="monster.jpg" alt="Sourdough monster cookies with chocolate chips, Oreo pieces and M&amp;M's on a wooden board" loading="lazy"><figcaption>Sourdough monster cookie</figcaption></figure>
+
+Taken off Nov 9, 2026: October cookie: Pumpkin Puffs, 4-pack ($6), Triple peanut butter cookie (new!) ($4), Peanut butter cream pie cookie (new!) ($4), Apple pie stuffed cookie (new!) ($None), Pumpkin coffee cake (new!) ($7)
+- <figure><img src="pumpkin-box.jpg" alt="A kraft box labeled Little Silo Sweets, 4 pack Pumpkin Puffs, with a Tastes like Fall sticker" loading="lazy"><figcaption>October's cookie of the month: Pumpkin Puffs</figcaption></figure>
+
+October Cookie of the Month section (removed Nov 9):
+```html
+  <section id="cookie-month">
+    <div class="feature">
+      <img src="pumpkin-new.jpg" alt="Four cream-filled Pumpkin Puffs sandwich cookies in a kraft box" loading="lazy">
+      <div>
+        <h2>October Cookie of the Month: Pumpkin Puffs</h2>
+        <p>Soft pumpkin cookies made with real pumpkin purée and Fall spice. Four to a box. Tastes like Fall.</p>
+        <p class="price">$6 per 4-pack</p>
+        <div class="btns"><a class="btn" href="#preorder">Pre-order Pumpkin Puffs</a></div>
+      </div>
+    </div>
+  </section>
+```
