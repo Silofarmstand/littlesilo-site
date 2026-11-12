@@ -1,10 +1,11 @@
 # On the shelf
 
-Items not on the order menu right now (updated Nov 9, 2026) (last updated Oct 27, 2026).
+Items not on the order menu right now (updated Nov 9, 2026) (last updated Nov 12, 2026).
 They are saved in index.html in the `SHELF` list. To bring one back, move it into `ITEMS` (and the At the Silo this week list).
 
 | Item | Price | Photo |
 |---|---|---|
+| Honey oat sourdough loaf | $15 | honeyoat.jpg |
 | Rosemary roasted garlic sourdough loaf | $15 | loaves3.jpg |
 | Mini-Sourdough flight (4 mini loaves) | $20 | flight.jpg |
 | Brown butter bourbon pecan chocolate chip cookie | $4 | pecan.jpg |
