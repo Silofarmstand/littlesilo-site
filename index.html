@@ -194,8 +194,8 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <p class="note">Choose what you like and send it to us by text using the button below. We'll reply to confirm, and <strong><em>a payment link will be sent to you upon order receipt.</em></strong></p>
       <div><label for="oname">Your name</label><input id="oname" type="text" autocomplete="name"></div>
       <div><label for="oday">Pickup day</label>
-        <select id="oday"><option>Friday</option><option>Saturday</option><option>Sunday</option><option>Thanksgiving: Tuesday, Nov 24</option><option>Thanksgiving: Wednesday, Nov 25</option></select></div>
-      <fieldset><legend>Pre-order menu for next week &amp; Thanksgiving week</legend><p class="note" style="margin:0 0 .8rem">For next week and Thanksgiving week, we're keeping it simple: our Thanksgiving breads and rolls, cinnamon rolls, and our favorite cookies. Cookies are $4 each, or $3.75 each when you buy 5 or more.</p><p class="note" style="margin:0 0 .8rem">Tap any photo to see it bigger.</p><ul class="items" id="oitems"></ul></fieldset>
+        <select id="oday"><option>Friday</option><option>Saturday</option><option>Sunday</option></select></div>
+      <fieldset><legend>Pre-order menu</legend><p class="note" style="margin:0 0 .8rem">Cookies are $4 each, or $3.75 each when you buy 5 or more.</p><p class="note" style="margin:0 0 .8rem">Tap any photo to see it bigger.</p><ul class="items" id="oitems"></ul></fieldset>
       <div><label for="onotes">Notes (what time you would like to pick up your order)</label><textarea id="onotes" rows="3"></textarea></div>
       <div><strong>Your order</strong><pre class="summary" id="osum"></pre></div>
       <div class="btns">
@@ -308,7 +308,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   var AFTER_THANKSGIVING = [["Classic white loaf (made with sourdough starter)", 8], ["Sourdough bagels, 6-pack (Sat & Sun pickup)", 12]];
   // ON THE SHELF (not shown on the site right now). To bring one back, move it into ITEMS above.
   var SHELF = [["Honey oat sourdough loaf", 15], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms", 4], ["Sourdough bread soup bowls, 2-pack (special order)", 10], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Peanut butter cream pie cookie (new!)", 4, "cookie"], ["Apple pie stuffed cookie (new!)", null], ["Pumpkin coffee cake (new!)", 7]];
-  var SECTIONS = {"0": "Thanksgiving breads", "5": "Rolls", "9": "Cookies"};
+  var SECTIONS = {"0": "Breads", "5": "Rolls", "9": "Cookies"};
 
   var qty = ITEMS.map(function(){return 0;});
   var list=document.getElementById('oitems'), sum=document.getElementById('osum'),
