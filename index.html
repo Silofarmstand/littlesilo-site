@@ -188,8 +188,7 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
 
   <section id="preorder">
     <h2>Pre-order for pickup</h2>
-    <p class="preorder-paused"><strong>Pre-orders are paused for Thanksgiving.</strong> They open again Monday, November 30, for pickup Friday, Saturday &amp; Sunday, December 4, 5 &amp; 6.</p>
-    <div class="order" hidden style="display:none">
+    <div class="order">
       <p class="deadline"><strong>Pre-orders need to be in by Tuesday at the latest for pickup on Friday, Saturday or Sunday.</strong> Need it sooner? Text us at <a href="sms:+12085205810">208-520-5810</a> and we'll see what we can do.</p>
       <p class="note">Need help ordering? Call or text <a href="tel:+12085205810">208-520-5810</a> and we will gladly help.</p>
       <p class="note">Choose what you like and send it to us by text using the button below. We'll reply to confirm, and <strong><em>a payment link will be sent to you upon order receipt.</em></strong></p>
@@ -304,12 +303,12 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   // Add "cookie" as a third value for cookies: 5 or more cookies (any mix) drop to COOKIE_DEAL each.
   var TAX_RATE = 0.08;
   var COOKIE_DEAL = 3.75, COOKIE_DEAL_QTY = 5;
-  var ITEMS = [["Sourdough Thanksgiving loaf (tastes just like stuffing!)", 15], ["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Rosemary roasted garlic sourdough loaf", 15], ["Mini-Sourdough flight box (4 mini loaves)", 20], ["Sourdough dinner rolls, 6-pack", 6], ["Sourdough dinner rolls, 1 dozen", 12], ["Sourdough cinnamon rolls, 4-pack", 15], ["Sourdough cinnamon rolls, 2-pack", 8], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Sourdough brown butter chocolate chip cookie", 4, "cookie"], ["Sourdough brown butter white chocolate cranberry cookie (new!)", 4, "cookie"], ["Stuffed pecan pie cookie (new!)", 4, "cookie"]];
+  var ITEMS = [["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Rosemary roasted garlic sourdough loaf", 15], ["Mini-Sourdough flight box (4 mini loaves)", 20], ["Sourdough dinner rolls, 6-pack", 6], ["Sourdough dinner rolls, 1 dozen", 12], ["Sourdough cinnamon rolls, 4-pack", 15], ["Sourdough cinnamon rolls, 2-pack", 8], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Sourdough brown butter chocolate chip cookie", 4, "cookie"], ["Sourdough brown butter white chocolate cranberry cookie (new!)", 4, "cookie"], ["Stuffed pecan pie cookie (new!)", 4, "cookie"]];
   // REGULAR WEEKLY ITEMS paused for next week + Thanksgiving week. Bring back after Thanksgiving:
   var AFTER_THANKSGIVING = [["Classic white loaf (made with sourdough starter)", 8], ["Sourdough bagels, 6-pack (Sat & Sun pickup)", 12]];
   // ON THE SHELF (not shown on the site right now). To bring one back, move it into ITEMS above.
-  var SHELF = [["Honey oat sourdough loaf", 15], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms", 4], ["Sourdough bread soup bowls, 2-pack (special order)", 10], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Peanut butter cream pie cookie (new!)", 4, "cookie"], ["Apple pie stuffed cookie (new!)", null], ["Pumpkin coffee cake (new!)", 7]];
-  var SECTIONS = {"0": "Breads", "5": "Rolls", "9": "Cookies"};
+  var SHELF = [["Sourdough Thanksgiving loaf (tastes just like stuffing!)", 15], ["Honey oat sourdough loaf", 15], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms", 4], ["Sourdough bread soup bowls, 2-pack (special order)", 10], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Peanut butter cream pie cookie (new!)", 4, "cookie"], ["Apple pie stuffed cookie (new!)", null], ["Pumpkin coffee cake (new!)", 7]];
+  var SECTIONS = {"0": "Breads", "4": "Rolls", "8": "Cookies"};
 
   var qty = ITEMS.map(function(){return 0;});
   var list=document.getElementById('oitems'), sum=document.getElementById('osum'),
