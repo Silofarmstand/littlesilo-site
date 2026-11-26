@@ -148,14 +148,11 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
     </div>
   </section>
 
-  <section id="november-special">
-    <div class="feature">
-      <img src="thanksgiving.jpg" alt="A golden, crusty Sourdough Thanksgiving loaf flecked with herbs, on a wooden board" loading="lazy">
+  <section id="december-special">
+    <div class="feature solo">
       <div>
-        <h2>November Special: Sourdough Thanksgiving Loaf</h2>
-        <p>Our sourdough baked with all the Thanksgiving flavors. It tastes just like stuffing! Available all through November.</p>
-        <p class="price">$15 per loaf</p>
-        <div class="btns"><a class="btn" href="#preorder">Pre-order a Thanksgiving loaf</a></div>
+        <h2>December Special: Peppermint Chocolate Sourdough Christmas Cookie</h2>
+        <p>Our December special, just in time for Christmas! Available all through December.</p>
       </div>
     </div>
   </section>
@@ -179,9 +176,9 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
     <div class="stand">
       <!-- EDIT THIS LIST EACH WEEK: change the text on the right, then update the date below. -->
       <ul>
-        <li class="grp"><h3>Bread</h3><div class="opts"><ul class="opts"><li><span><strong>November special:</strong> Sourdough Thanksgiving loaf (tastes just like stuffing!)</span><em>$15</em></li><li><span>Regular sourdough loaf</span><em>$12</em></li><li><span>Jalapeño cheddar sourdough loaf</span><em>$15</em></li><li><span>Garlic rosemary sourdough loaf</span><em>$15</em></li><li><span>Classic white loaf, made with sourdough starter</span><em>$8</em></li></ul></div></li>
+        <li class="grp"><h3>Bread</h3><div class="opts"><ul class="opts"><li><span>Regular sourdough loaf</span><em>$12</em></li><li><span>Jalapeño cheddar sourdough loaf</span><em>$15</em></li><li><span>Garlic rosemary sourdough loaf</span><em>$15</em></li><li><span>Classic white loaf, made with sourdough starter</span><em>$8</em></li></ul></div></li>
         <li class="grp"><h3>Bagels</h3><div class="opts"><ul class="opts"><li><span>Sourdough bagels, 6-pack</span><em>$12</em></li></ul><p class="onote">Usually Saturdays and Sundays.</p></div></li>
-        <li class="grp"><h3>Cookies &amp; sweets</h3><div class="opts"><ul class="opts"><li><span>Sourdough brown butter white chocolate cranberry (new!)</span><em>$4</em></li><li><span>Sourdough brown butter chocolate chip</span><em>$4</em></li><li><span>Sourdough oatmeal cream pie</span><em>$4</em></li><li><span>Stuffed pecan pie cookie (new!)</span><em>$4</em></li><li><span>Sourdough cinnamon rolls, 2-pack</span><em>$8</em></li></ul><p class="onote">Regular cookies are $4 each, or $3.75 each when you get 5 or more. Specialty cookies are not included in that price.</p></div></li>
+        <li class="grp"><h3>Cookies &amp; sweets</h3><div class="opts"><ul class="opts"><li><span><strong>December special:</strong> Peppermint chocolate sourdough Christmas cookie</span></li><li><span>Sourdough brown butter white chocolate cranberry (new!)</span><em>$4</em></li><li><span>Sourdough brown butter chocolate chip</span><em>$4</em></li><li><span>Sourdough oatmeal cream pie</span><em>$4</em></li><li><span>Stuffed pecan pie cookie (new!)</span><em>$4</em></li><li><span>Sourdough cinnamon rolls, 2-pack</span><em>$8</em></li></ul><p class="onote">Regular cookies are $4 each, or $3.75 each when you get 5 or more. Specialty cookies are not included in that price.</p></div></li>
       </ul>
     </div>
   </section>
@@ -234,7 +231,6 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
       <figure><img src="dahlia.jpg" alt="A coral-red dahlia in full bloom in the garden" loading="lazy"><figcaption>Dahlias from our garden</figcaption></figure>
       <figure><img src="honey.jpg" alt="Jars of Nezland Farms honey tied with twine and a honeycomb charm" loading="lazy"><figcaption>Nezland Farms honey, available inside the Silo</figcaption></figure>
       <figure><img src="bagels.jpg" alt="A stack of golden sourdough bagels on a wooden board" loading="lazy"><figcaption>Sourdough bagels, 6 for $12, usually Saturdays and Sundays</figcaption></figure>
-    <figure><img src="thanksgiving.jpg" alt="A golden, crusty Sourdough Thanksgiving loaf flecked with herbs, on a wooden board" loading="lazy"><figcaption>November special: Sourdough Thanksgiving loaf. Tastes just like stuffing! $15</figcaption></figure>
     <figure><img src="dinnerrolls.jpg" alt="A dozen golden sourdough dinner rolls in a bag with a Little Silo Flower Farm label" loading="lazy"><figcaption>Sourdough dinner rolls, amazingly soft! $12 a dozen, pre-order through November</figcaption></figure>
     <figure hidden><img src="honeyoat.jpg" alt="Honey oat sourdough loaf topped with rolled oats, cut open to show the crumb" loading="lazy"><figcaption>Honey oat sourdough</figcaption></figure>
     <figure><img src="breadbowls.jpg" alt="Four crusty scored sourdough bread bowls on a wooden board" loading="lazy"><figcaption>Sourdough bread soup bowls, 2 for $10, by special order</figcaption></figure>
@@ -304,12 +300,12 @@ footer p{margin:.6rem 0 0}footer a{font-weight:700}
   // Add "cookie" as a third value for cookies: 5 or more cookies (any mix) drop to COOKIE_DEAL each.
   var TAX_RATE = 0.08;
   var COOKIE_DEAL = 3.75, COOKIE_DEAL_QTY = 5;
-  var ITEMS = [["Sourdough Thanksgiving loaf (tastes just like stuffing!)", 15], ["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Rosemary roasted garlic sourdough loaf", 15], ["Mini-Sourdough flight box (4 mini loaves)", 20], ["Sourdough dinner rolls, 6-pack", 6], ["Sourdough dinner rolls, 1 dozen", 12], ["Sourdough cinnamon rolls, 4-pack", 15], ["Sourdough cinnamon rolls, 2-pack", 8], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Sourdough brown butter chocolate chip cookie", 4, "cookie"], ["Sourdough brown butter white chocolate cranberry cookie (new!)", 4, "cookie"], ["Stuffed pecan pie cookie (new!)", 4, "cookie"]];
+  var ITEMS = [["Regular sourdough loaf", 12], ["Jalapeño cheddar sourdough loaf", 15], ["Rosemary roasted garlic sourdough loaf", 15], ["Mini-Sourdough flight box (4 mini loaves)", 20], ["Sourdough dinner rolls, 6-pack", 6], ["Sourdough dinner rolls, 1 dozen", 12], ["Sourdough cinnamon rolls, 4-pack", 15], ["Sourdough cinnamon rolls, 2-pack", 8], ["Sourdough oatmeal cream pie", 4, "cookie"], ["Sourdough brown butter chocolate chip cookie", 4, "cookie"], ["Sourdough brown butter white chocolate cranberry cookie (new!)", 4, "cookie"], ["Stuffed pecan pie cookie (new!)", 4, "cookie"]];
   // REGULAR WEEKLY ITEMS paused for next week + Thanksgiving week. Bring back after Thanksgiving:
   var AFTER_THANKSGIVING = [["Classic white loaf (made with sourdough starter)", 8], ["Sourdough bagels, 6-pack (Sat & Sun pickup)", 12]];
   // ON THE SHELF (not shown on the site right now). To bring one back, move it into ITEMS above.
-  var SHELF = [["Honey oat sourdough loaf", 15], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms", 4], ["Sourdough bread soup bowls, 2-pack (special order)", 10], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Peanut butter cream pie cookie (new!)", 4, "cookie"], ["Apple pie stuffed cookie (new!)", null], ["Pumpkin coffee cake (new!)", 7]];
-  var SECTIONS = {"0": "Breads", "5": "Rolls", "9": "Cookies"};
+  var SHELF = [["Sourdough Thanksgiving loaf (tastes just like stuffing!)", 15], ["Honey oat sourdough loaf", 15], ["Brown butter bourbon pecan chocolate chip cookie", 4, "cookie"], ["Stuffed S'mores cookie (new!)", 4], ["Sourdough white chocolate macadamia nut cookie (new!)", 4], ["Farm fresh eggs, dozen (when available)", 5], ["Fresh-milled organic bread (special order, by Tuesday)", 10], ["Apple fritter focaccia (special order, by Tuesday)", 12], ["Biscoff cookie", 4, "cookie"], ["Sourdough monster cookie: chocolate chips, Oreos, M&Ms", 4], ["Sourdough bread soup bowls, 2-pack (special order)", 10], ["Banana pudding cookie (pre-order only)", 4], ["Hello Fall: sourdough mini chocolate chip cookie cake, buttercream icing (through October)", 6], ["October cookie: Pumpkin Puffs, 4-pack", 6], ["Triple peanut butter cookie (new!)", 4, "cookie"], ["Peanut butter cream pie cookie (new!)", 4, "cookie"], ["Apple pie stuffed cookie (new!)", null], ["Pumpkin coffee cake (new!)", 7]];
+  var SECTIONS = {"0": "Breads", "4": "Rolls", "8": "Cookies"};
 
   var qty = ITEMS.map(function(){return 0;});
   var list=document.getElementById('oitems'), sum=document.getElementById('osum'),
